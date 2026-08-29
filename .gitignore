@@ -1,0 +1,29 @@
+# Virtual environment
+.venv/
+venv/
+
+# Environment variables / secrets
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+#extracted Dataset files
+# Cricket datasets
+Dataset/ipl_json/
+Dataset/odis_json/
+Dataset/t20s_json/
+Dataset/tests_json/
+Dataset/ipl_json.zip
+Dataset/odis_json.zip
+Dataset/t20s_json.zip
+Dataset/tests_json.zip
+
