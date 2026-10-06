@@ -1,0 +1,46 @@
+.section-bg-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.section-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 650px;
+  background-size: cover;
+  background-position: center top;
+  z-index: 1;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.25);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.9);
+}
+
+.section-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 30%,
+    rgba(6, 8, 19, 0.25) 0%,
+    rgba(6, 8, 19, 0.7) 60%,
+    rgba(6, 8, 19, 0.98) 100%
+  );
+  pointer-events: none;
+}
+
+.section-bg-gradient-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 220px;
+  background: linear-gradient(to bottom, transparent, var(--bg, #060813));
+  pointer-events: none;
+}
+
+.section-bg-content {
+  position: relative;
+  z-index: 5;
+}
