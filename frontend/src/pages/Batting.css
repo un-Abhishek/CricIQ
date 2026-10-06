@@ -1,0 +1,260 @@
+.batting-page {
+  width: 87%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 55px 0 80px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  padding-bottom: 35px;
+
+  border-bottom: 1px solid #182631;
+}
+
+.page-header h1 {
+  margin: 0;
+
+  font-size: 54px;
+  letter-spacing: -2.5px;
+}
+
+.page-header h1 span {
+  color: #29e9a7;
+}
+
+.page-header p {
+  margin: 12px 0 0;
+
+  color: #8494a5;
+
+  font-size: 15px;
+}
+
+.format-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 17px;
+
+  border-radius: 22px;
+
+  border: 1px solid #1c8b69;
+
+  color: #2ae6a5;
+
+  background: rgba(42, 230, 165, 0.08);
+
+  font-size: 13px;
+}
+
+.batting-controls {
+  display: flex;
+  gap: 12px;
+
+  padding: 25px 0;
+}
+
+.search-input {
+  height: 44px;
+
+  width: 310px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 0 14px;
+
+  border-radius: 9px;
+
+  border: 1px solid #22323f;
+
+  background: #0b151e;
+}
+
+.search-input span {
+  font-size: 23px;
+  color: #8191a1;
+}
+
+.search-input input {
+  width: 100%;
+
+  background: transparent;
+
+  border: none;
+  outline: none;
+
+  color: #ffffff;
+
+  font-size: 13px;
+}
+
+.search-input input::placeholder {
+  color: #637487;
+}
+
+.batting-controls select {
+  height: 44px;
+
+  padding: 0 15px;
+
+  border-radius: 9px;
+
+  border: 1px solid #22323f;
+
+  background: #0b151e;
+
+  color: #aebdca;
+
+  outline: none;
+
+  cursor: pointer;
+
+  font-size: 12px;
+}
+
+.batting-controls select:focus {
+  border-color: #28dca1;
+}
+
+.table-info {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+
+  color: #6f8092;
+
+  font-size: 12px;
+}
+
+.dataset-label {
+  color: #29e9a7;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+
+  border-radius: 14px;
+
+  border: 1px solid #1a2a37;
+
+  background: #09131c;
+}
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 800px;
+}
+
+thead {
+  background: #0e1b26;
+}
+
+th {
+  padding: 17px 20px;
+
+  text-align: left;
+
+  color: #718294;
+
+  font-size: 10px;
+
+  letter-spacing: 1.4px;
+
+  font-weight: 700;
+
+  border-bottom: 1px solid #1d2d3a;
+}
+
+td {
+  padding: 17px 20px;
+
+  border-bottom: 1px solid #14232e;
+
+  color: #aebbc8;
+
+  font-size: 13px;
+}
+
+tbody tr {
+  transition: background 0.18s;
+}
+
+tbody tr:hover {
+  background: rgba(42, 230, 165, 0.035);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.rank {
+  color: #596b7b;
+  width: 45px;
+}
+
+.player-name {
+  color: #f0f5f7;
+
+  font-weight: 650;
+
+  min-width: 190px;
+}
+
+.runs {
+  color: #2ae6a5;
+
+  font-weight: 700;
+}
+
+.loading,
+.no-results {
+  padding: 70px;
+
+  text-align: center;
+
+  color: #728496;
+
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+
+  .batting-page {
+    width: 92%;
+    padding-top: 35px;
+  }
+
+  .page-header {
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .page-header h1 {
+    font-size: 42px;
+  }
+
+  .batting-controls {
+    flex-direction: column;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .batting-controls select {
+    width: 100%;
+  }
+}

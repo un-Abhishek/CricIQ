@@ -4,10 +4,18 @@ venv/
 
 # Environment variables / secrets
 .env
+backend/.env
 
 # Python cache
 __pycache__/
 *.py[cod]
+
+# Node.js
+node_modules/
+frontend/node_modules/
+
+# Frontend build
+frontend/dist/
 
 # VS Code
 .vscode/
@@ -16,14 +24,13 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-#extracted Dataset files
 # Cricket datasets
 Dataset/ipl_json/
 Dataset/odis_json/
 Dataset/t20s_json/
 Dataset/tests_json/
+
 Dataset/ipl_json.zip
 Dataset/odis_json.zip
 Dataset/t20s_json.zip
 Dataset/tests_json.zip
-
